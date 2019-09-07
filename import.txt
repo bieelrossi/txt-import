@@ -1,0 +1,30 @@
+/*
+ * Gabriel Rossi
+ */
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.nio.charset.Charset;
+
+
+public class Example {
+     
+    
+    public static void main(String[] args) throws IOException {
+        
+    BufferedReader reader = new BufferedReader(new FileReader("C:\\file\\path\\example.txt"));
+    String Sb = "";
+    String line = null;
+
+    while ((line = reader.readLine()) != null) {
+        Sb += line;	
+        }
+
+	System.out.prinln("Sb")
+    
+    }
+
+}
